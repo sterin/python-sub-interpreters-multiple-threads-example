@@ -8,7 +8,7 @@ jobs:
         os:
           - ubuntu-latest
           - macos-latest
-          - windows-latest
+          # - windows-latest
 
     runs-on: ${{ matrix.os }}
 
@@ -30,4 +30,8 @@ jobs:
     - name: Build
       run: |
         cmake --build build
+
+    - name: Run program
+      run: |
+        cmake --build build --target test
 
