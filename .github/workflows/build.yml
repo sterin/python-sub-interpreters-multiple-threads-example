@@ -23,5 +23,11 @@ jobs:
         python-version: '3.x'
         architecture: 'x64'
 
+    - name: Configure
+      run: |
+        cmake -B build
+
     - name: Build
-      uses: lukka/run-cmake@v3
+      run: |
+        cmake --build build
+
