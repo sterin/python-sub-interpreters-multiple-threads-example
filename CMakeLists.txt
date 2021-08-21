@@ -11,4 +11,4 @@ target_link_libraries(py1 PUBLIC Python::Python Threads::Threads)
 
 enable_testing()
 
-add_test(simple_test COMMAND py1)
+add_test(NAME simple_test COMMAND py1)
