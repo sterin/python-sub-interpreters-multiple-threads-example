@@ -12,7 +12,7 @@ struct initialize
     initialize()
     {
         Py_InitializeEx(1);
-        PyEval_InitThreads();
+        PyEval_InitThreads(); // not needed as of Python 3.7, deprecated as of 3.9
     }
 
     ~initialize()
