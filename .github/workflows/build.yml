@@ -33,5 +33,5 @@ jobs:
 
     - name: Run program
       run: |
-        cmake --build build --config=Release --target test
+        cmake --build build --config=Release --target run
 
